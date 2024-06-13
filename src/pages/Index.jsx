@@ -1,4 +1,5 @@
 import { Container, VStack, Heading, Box, Text, SimpleGrid } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -20,6 +21,12 @@ const Index = () => {
             <Heading fontSize="xl">Domestic Violence Charges</Heading>
             <Text mt={4}>Stay updated on your domestic violence charges and related information.</Text>
           </Box>
+          <Link to="/notes">
+            <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+              <Heading fontSize="xl">Notes</Heading>
+              <Text mt={4}>Keep track of important information and updates.</Text>
+            </Box>
+          </Link>
         </SimpleGrid>
       </VStack>
     </Container>

@@ -27,6 +27,12 @@ const Index = () => {
               <Text mt={4}>Keep track of important information and updates.</Text>
             </Box>
           </Link>
+          <Link to="/contacts">
+            <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+              <Heading fontSize="xl">Contact List</Heading>
+              <Text mt={4}>Access important contacts for lawyers, support groups, and more.</Text>
+            </Box>
+          </Link>
         </SimpleGrid>
       </VStack>
     </Container>

@@ -1,17 +1,26 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, VStack, Heading, Box, Text, SimpleGrid } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container maxW="container.xl" py={10}>
+      <VStack spacing={8} align="stretch">
+        <Heading as="h1" size="2xl" textAlign="center">
+          Legal Situation Dashboard
+        </Heading>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+            <Heading fontSize="xl">Divorce Proceedings</Heading>
+            <Text mt={4}>Keep track of all your divorce-related legal matters here.</Text>
+          </Box>
+          <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+            <Heading fontSize="xl">Cannabis Possession Charges</Heading>
+            <Text mt={4}>Monitor the status and details of your cannabis possession charges.</Text>
+          </Box>
+          <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
+            <Heading fontSize="xl">Domestic Violence Charges</Heading>
+            <Text mt={4}>Stay updated on your domestic violence charges and related information.</Text>
+          </Box>
+        </SimpleGrid>
       </VStack>
     </Container>
   );
